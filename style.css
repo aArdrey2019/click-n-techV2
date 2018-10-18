@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+.header{
+  text-align: center;
+  color: white;
+  font-family: 'Anton';
+  font-size: 2vw;
+  background-color: #303030;
+  float: right;
+}
+.navbutton{
+  float: left;
+  background-color: #303030;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
