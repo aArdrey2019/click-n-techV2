@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang  = "en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "Small community of people into tech new and old, all avaliable at a click!">
-    <meta name = "keywords" content = "Small, tech, new, old, retro, easy, gaming, PC, console">
-    <link href= "https://fonts.googleapis.com/cssfamily=FugazOne" rel="stylesheet">
-    <link href= "https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<link rel="icon" href="logo.png" type="image/png" sizes="16x16">
-    <title>Click'N'Tech</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="headercontainer">
-	<div class="navbutton">
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()"><image src="nav.png" style="width: 10%"></span>
-		<script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name = "description" content = "Small community of people into tech new and old, all avaliable at a click!">
+<meta name = "keywords" content = "Small, tech, new, old, retro, easy, gaming, PC, console">
+<link href= "https://fonts.googleapis.com/cssfamily=FugazOne" rel="stylesheet">
+<link href= "https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+<link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+<title>Click'N'Tech</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="headercontainer">
+  <div class="navbutton"> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> 
+    <script>
 			function openNav() {
   			document.getElementById("myNav").style.width = "20%";
 			}
@@ -22,31 +21,23 @@
 			function closeNav() {
   			document.getElementById("myNav").style.width = "0%";
 			}
-		</script>
-	</div>
-    <div class="header">
-      <h1>Click'N'Tech</h1>
-    </div>
-    <div class="login">
-      <input type="text" placeholder="Username" name="uname" required><br>
-      <input type="password" placeholder="Password" name="psw" required><br>
-      <button onclick=alert("WIP") type="submit">Login</button>
-      <button onclick=alert("WIP") type="submit" href="need.html">Need Account</button>
-    </div>
+		</script> 
   </div>
-	<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-	  <a href="index.html">Home</a>
-	  <a href="account.html">Account</a>
+  <div class="header" id="why" >
+    <h1 onClick='document.getElementById("why").innerHTML = "Why did you click me?"'>Click'N'Tech</h1>
   </div>
+  <div class="login">
+    <input type="text" placeholder="Username" name="uname" required>
+    <br>
+    <input type="password" placeholder="Password" name="psw" required>
+    <br>
+    <button onclick=alert("WIP") type="submit">Login</button>
+    <button onclick=alert("WIP") type="submit" href="need.html">Sign-Up</button>
+  </div>
+<div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content"> <a href="index.html">Home</a> <a href="account.html">Account</a> </div>
 </div>
-	</div>
-  <footer class="footer">Click'N'Tech &copy;<br>Click'N'Tech &reg;</footer>
-  </body>
+<footer class="footer">Click'N'Tech &copy;<br>
+  Click'N'Tech &reg;</footer>
+</body>
 </html>
-
-
-
-
-
