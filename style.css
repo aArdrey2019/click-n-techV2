@@ -2,7 +2,7 @@
 	margin: 0;
 }
 body {
-	background:#7C7C7C
+	background: #4F4F4F;
 }
 .headercontainer {
 	width: 100%;
@@ -57,7 +57,7 @@ body {
 }
 .login button {
 	resize: both;
-	width: 53px;
+	width: 50%;
 	background-color: gray;
 	border-style: none;
 	color: white;
@@ -114,7 +114,23 @@ body {
 	right: 10px;
 	font-size: 4vw;
 }
-@media screen and (max-height: 450px) {
+.borderglow{
+	height: 20px;
+	width: 100%;
+	animation-name: rainbow;
+	animation-duration: 6s;
+	animation-direction: normal;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	position: relative;
+	top: -7px;
+	}
+.borderglowfade{
+	height: 10px;
+	width: 100%;
+}
+@media screen and (min-width: 200px) {
 .overlay a {
 	font-size: 20px
 }
@@ -123,47 +139,30 @@ body {
 	top: 15px;
 	right: 35px;
 }
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
 }
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+@keyframes rainbow{
+	0% {background-image: -webkit-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,0,0,1.00) 43.52%,rgba(255,0,4,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,0,0,1.00) 43.52%,rgba(255,0,4,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,0,0,1.00) 43.52%,rgba(255,0,4,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,0,0,0.00) 0%,rgba(255,0,0,1.00) 43.52%,rgba(255,0,4,1.00) 54.41%,rgba(255,0,4,0.00) 100%);}
+	20% {background-image: -webkit-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,95,0,1.00) 43.52%,rgba(255,95,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,95,0,1.00) 43.52%,rgba(255,95,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,95,0,1.00) 43.52%,rgba(255,95,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,0,0,0.00) 0%,rgba(255,95,0,1.00) 43.52%,rgba(255,95,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);}
+	40% {background-image: -webkit-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,214,0,1.00) 43.52%,rgba(255,214,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,214,0,1.00) 43.52%,rgba(255,214,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(255,214,0,1.00) 43.52%,rgba(255,214,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,0,0,0.00) 0%,rgba(255,214,0,1.00) 43.52%,rgba(255,214,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);}
+	60% {background-image: -webkit-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(35,136,0,1.00) 43.52%,rgba(35,136,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(35,136,0,1.00) 43.52%,rgba(35,136,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(35,136,0,1.00) 43.52%,rgba(35,136,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,0,0,0.00) 0%,rgba(35,136,0,1.00) 43.52%,rgba(35,136,0,1.00) 54.41%,rgba(255,0,4,0.00) 100%);}
+	80% {background-image: -webkit-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(0,82,227,1.00) 43.52%,rgba(0,82,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(0,82,227,1.00) 43.52%,rgba(0,82,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(0,82,227,1.00) 43.52%,rgba(0,82,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,0,0,0.00) 0%,rgba(0,82,227,1.00) 43.52%,rgba(0,82,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);}
+	100% {background-image: -webkit-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(143,0,227,1.00) 43.52%,rgba(143,0,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(143,0,227,1.00) 43.52%,rgba(143,0,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,0,0,0.00) 0%,rgba(143,0,227,1.00) 43.52%,rgba(143,0,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,0,0,0.00) 0%,rgba(143,0,227,1.00) 43.52%,rgba(143,0,227,1.00) 54.41%,rgba(255,0,4,0.00) 100%);}
 }
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-#myDiv {
-  display: none;
-  text-align: center;
-}
-	
